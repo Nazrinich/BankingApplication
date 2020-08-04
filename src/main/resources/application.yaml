@@ -1,0 +1,21 @@
+server:
+  port: ${PORT:6062}
+
+
+spring:
+  main:
+    banner-mode: off
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: secret
+
+  # ===============================
+  # = JPA configurations
+  # ===============================
+  jpa:
+    open-in-view: false
+    generate-ddl: true
+    hibernate.ddl-auto: update
+    show-sql: true
